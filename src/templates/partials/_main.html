@@ -1,0 +1,49 @@
+<div class="top">
+	{% include "partials/_main-nav.html" %}
+</div>
+<div class="logo">
+	<div class="logo__info">The perfect present</div>
+	<div class="main-logo">
+		<img src="./img/logo.png" alt="">
+	</div>
+	<div class="socials">
+		<a class="socials__img" href="#"><img src="./img/p.png" alt=""></a>
+		<a class="socials__img" href="#"><img src="./img/facebook.png" alt=""></a>
+		<a class="socials__img" href="#"><img src="./img/instagram.png" alt=""></a>
+	</div>
+</div>
+<div class="title">
+	<div class="title__right-line"></div>
+	<img class="title__img" src="./img/goft.png" alt="">
+	<div class="title__left-line"></div>
+</div>
+<nav class="products-nav">
+	{% include "partials/_products-list.html" %}
+</nav>
+{% include "partials/_slider.html" %}
+<div class="back">BACK  TO</div>
+<div class="title title_short">
+	<div class="title__right-line"></div>
+	<div id="back" class="title__name"><a href="#">Jewelry</a></div>
+	<div class="title__left-line"></div>
+</div>
+<nav class="products-nav products-nav_down">
+	{% include "partials/_products-list.html" %}
+</nav>
+<footer class="footer">
+	<div class="main-logo main-logo_footer">
+		<img src="./img/logo.png" alt="">
+	</div>
+	<div class="info">
+		<div class="info__text">Over time, fine jewelry can become a treasured family heirloom if it is cared for properly. Dust, pollution and daily wear all conspire to cloud the brilliance of gemstones.</div>
+		<div class="socials socials_footer">
+			<div class="links">
+				<a class="links__item" href="#"><img src="./img/p-black.png" alt=""></a>
+				<a class="links__item" href="#"><img src="./img/facebook-black.png" alt=""></a>
+				<a class="links__item" href="#"><img src="./img/instagram-black.png" alt=""></a>
+			</div>
+			<p class="follow">FOLLOW US</p>
+		</div>
+	</div>
+	{% include "partials/_main-nav.html" %}
+</footer>

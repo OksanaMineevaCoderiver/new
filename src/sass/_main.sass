@@ -1,0 +1,219 @@
+.nav
+	display: flex
+	justify-content: space-between
+	font-family: "Myriad Pro"
+	font-size: 11px
+	font-weight: 400
+	line-height: 14.4px
+	letter-spacing: .7px
+	text-transform: uppercase
+	+r(500)
+		flex-wrap: wrap;
+
+.right-nav, .left-nav
+	display: flex
+	+r(500)
+		width: 100%
+		justify-content: center
+	&__items
+		padding-left: 7px
+		&:first-child
+			padding-left: 0
+		&:last-child a:after
+			content: ''
+	&__item
+		color: #000000
+		text-decoration: none
+		&:after
+			content: "|"
+			right: 0
+			padding-left: 8px
+.logo
+	display: flex
+	align-items: center
+	justify-content: space-between
+	height: 90px
+	margin-top: 16px
+	margin-left: 8px
+	margin-bottom: 5px
+	+r(950)
+		padding-left: 10px
+		padding-right: 10px
+	+r(700)
+		margin-bottom: 10px
+	+r(450)
+		flex-flow: column
+		height: auto
+	&__info
+		+academy
+		font-size: 18px
+		text-transform: uppercase
+		+r(700)
+			width: 27%
+			text-align: center
+			line-height: 1.5
+		+r(450)
+			width: 90%
+.main-logo
+	width: 183px
+	padding: 18px 20px 0
+	margin-top: -10px
+	background-color: #fff
+	border-radius: 20px
+	position: absolute
+	top: 25px
+	right: 50%
+	margin-right: -91px
+	text-align: center
+	+r(700)
+		top: 30px
+		margin-top: 0
+		padding-top: 8px
+	+r(500)
+		top: 50px
+	+r(450)
+		position: static
+		margin-right: 0
+	&_footer
+		top: 10px
+		padding-top: 0
+		padding-bottom: 25px
+		border-radius: 0 0 20px 20px
+		+r(770)
+			position: static
+			margin: 0 auto
+		+r(450)
+			margin-right: auto
+.socials
+	margin-top: 3px
+	display: flex
+	align-items: center
+	+r(450)
+		margin-top: 10px
+		margin-bottom: 10px
+	&__img
+		margin-left: 20px
+		&:first-child
+			margin-left: -5px
+	&_footer
+		flex-flow: column
+.title
+	display: flex
+	align-items: center
+	margin-bottom: 19px
+	&_short &__right-line 
+		margin-left: auto
+		width: 160px
+		flex: 0 1 auto
+	&_short &__left-line
+		margin-right: auto
+		width: 160px
+		flex: 0 1 auto
+	&__img
+		margin-left: 28px
+		margin-right: 28px
+	&__name
+		+academy
+		font-size: 31px
+		text-transform: uppercase
+		margin-left: 18px
+		margin-right: 18px
+		margin-top: 2px		
+	&__right-line
+		flex: 1 1 auto
+		border-bottom: 1px solid #dddddd
+		height: 12px
+		margin-right: 15px
+		position: relative
+		margin-top: -12px
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			height: 23px
+			width: 12px
+			background: transparent url(/img/arrow.png) no-repeat;
+			transform: rotate(180deg)
+			right: 0
+			margin-right: -13px
+	&__left-line
+		flex: 1 1 auto
+		border-bottom: 1px solid #dddddd
+		height: 12px
+		margin-left: 15px
+		margin-top: -12px
+		&:after
+			content: ""
+			display: block
+			height: 23px
+			width: 12px
+			background: transparent url(/img/arrow.png) no-repeat;
+			margin-left: -13px
+.back
+	margin-top: 46px
+	color: #777777
+	font-family: "Myriad Pro"
+	font-size: 14px
+	font-weight: 400
+	line-height: 16.8px
+	text-transform: uppercase
+	text-align: center
+.products-nav
+	color: #000000;
+	font-family: "Myriad Pro"
+	font-size: 14px
+	font-weight: 400
+	line-height: 16.8px
+	text-transform: uppercase
+	display: flex
+	justify-content: center
+	letter-spacing: 0
+	padding-left: 6px
+	margin-bottom: 39px
+	&_down
+		margin-top: 40px
+		margin-bottom: 25px
+	&__list
+		display: flex
+		+r(570)
+			flex-wrap: wrap
+			justify-content: center
+		+r(540)
+			margin-right: 40px
+			margin-left: 40px
+		+r(357)
+			margin-right: 10px
+			margin-left: 10px
+	&__item
+		position: relative
+		padding-right: 21px
+		+r(540)
+			margin-top: 10px
+		&:after
+			content: "|"
+			display: block
+			position: absolute
+			top: 0
+			left: -10px
+		&:first-child:after
+			display: none
+		&:last-child
+			padding-right: 0
+		&:nth-child(5):after
+			+r(540)
+				display: none
+			+r(440)
+				display: block
+
+		&:nth-child(4)
+			+r(540)
+				padding-right: 0
+			+r(440)
+				padding-right: 21px
+			&:after
+				+r(440)
+					display: none
+		&:nth-child(3)
+			+r(440)
+				padding-right: 0
+
